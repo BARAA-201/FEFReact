@@ -1,0 +1,34 @@
+// practice example for redux:
+
+user makes an action from the UI => Action is called => dispatched to reducer => reducer receives the object returned by the action => reducer updates the global state
+
+// Add a new feature to allow a user to add in a loan ammount
+// This should add the loan to the bank balance and also 
+display the total debt due
+
+// we can start to write the "takeLoan" action first
+// the action should return an object with the type and payload properties
+
+// We need to export the action to be able to import it to 
+our component
+
+// we can now make a dispatch using the useDispatch hook 
+
+// now that we have created the action and the 
+dispatch will move to the reducer, so let's 
+add the new case for the new action type "TAKE_LOAN"
+
+// update the initial state to include the debt property 
+with default to 0
+
+
+
+
+// class hands-on:
+
+// add a button that will pay all the due debt amount
+// this button should update the redux store 
+for balance - debt and debt to equal 0
+// the button should be disabled if the debt> Balance
+
+
